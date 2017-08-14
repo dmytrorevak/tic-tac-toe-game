@@ -1,0 +1,123 @@
+.flex {
+    display: flex;
+}
+
+.tick-tack-toe-module {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #8c9eff;
+}
+
+.app-template {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.app-template_active {
+    display: flex;
+}
+
+.start-game-template {
+    justify-content: center;
+    align-items: center;
+}
+
+.start-game-button, .lets-game-button {
+    font-size: 46px;
+    padding: 20px;
+    background-color: #4e342e;
+    color: #8bc34a;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.lets-game-button {
+    font-size: 35px;
+    padding: 15px;
+    margin-top: 50px;
+    display: none;
+}
+
+.initialize-player-template {
+    flex-direction: column;
+    align-items: center;
+}
+
+.initialize-player-heading {
+    font-size: 40px;
+    color: #4e342e;
+}
+
+.payers-sections {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.payers-initialize-sections {
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-input {
+    border: none;
+    border-radius: 10px;
+    height: 15px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+}
+
+.image-wrapper {
+    padding: 0;
+    margin: 20px 0 0 0;
+    font-size: 0;
+    border: 1px solid #3e2723;
+    width: 200px;
+}
+
+.player-name {
+    text-align: center;
+}
+
+.play-game-template {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-symbol {
+    font-size: 60px;
+}
+
+.play-area__table {
+    background-color: #8bc34a;
+    color: #4e342e;
+    border: 1px solid #3e2723;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.play-area__cell {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 1px solid #3e2723;
+    font-size: 170px;
+    line-height: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.active_player {
+    box-shadow: 0px 0px 25px 20px white;
+}
+
+.winner_player {
+    box-shadow: 0px 0px 25px 20px #00C853;
+}
+
+.lose_player {
+    box-shadow: 0px 0px 25px 20px #a21318;
+}

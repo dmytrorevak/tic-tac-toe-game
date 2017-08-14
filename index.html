@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tick tack toe task</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="tick-tack-toe-module flex">
+        <main class="app-template start-game-template app-template_active">
+            <button type="button" class="start-game-button">Start the Game</button>
+        </main>
+        <main class="app-template initialize-player-template">
+            <h1 class="initialize-player-heading">Players, please enter your names</h1>
+            <div class="payers-sections flex">
+                <section class="first-player payers-initialize-sections flex">
+                    <input type="text" class="page-input first-player__name-input" placeholder="enter the player 1 name">
+                    <h2 class="first-player__name player-name"></h2>
+                    <figure class="image-wrapper first-player__image-wrapper">
+                        <img src="" class="first-player__image">
+                    </figure>
+                </section>
+                <section class="second-player payers-initialize-sections flex">
+                    <input type="text" class="page-input second-player__name-input" placeholder="enter the player 2 name">
+                    <h2 class="second-player__name player-name"></h2>
+                    <figure class="image-wrapper second-player__image-wrapper">
+                        <img src="" class="second-player__image">
+                    </figure>
+                </section>
+            </div>
+            <button type="button" class="lets-game-button">Let's go</button>
+        </main>
+        <main class="app-template play-game-template">
+            <section class="first-player payers-initialize-sections flex">
+                <h2 class="first-player__name player-name">uoi</h2>
+                <figure class="image-wrapper first-player__image-wrapper active_player">
+                    <img src="https://robohash.org/dgf?size=200x200" class="first-player__image">
+                </figure>
+                <h2 class="player-symbol first-player-symbol">&#215;</h2>
+            </section>
+            <section class="play-area">
+                <table class="play-area__table">
+                    <tr class="play-area__row">
+                        <td class="play-area__cell" data-cell-coordinate="0"></td>
+                        <td class="play-area__cell" data-cell-coordinate="1"></td>
+                        <td class="play-area__cell" data-cell-coordinate="2"></td>
+                    </tr>
+                    <tr class="play-area__row">
+                        <td class="play-area__cell" data-cell-coordinate="3"></td>
+                        <td class="play-area__cell" data-cell-coordinate="4"></td>
+                        <td class="play-area__cell" data-cell-coordinate="5"></td>
+                    </tr>
+                    <tr class="play-area__row">
+                        <td class="play-area__cell" data-cell-coordinate="6"></td>
+                        <td class="play-area__cell" data-cell-coordinate="7"></td>
+                        <td class="play-area__cell" data-cell-coordinate="8"></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="second-player payers-initialize-sections flex">
+                <h2 class="second-player__name player-name">uoi</h2>
+                <figure class="image-wrapper second-player__image-wrapper">
+                    <img src="https://robohash.org/dgf?size=200x200" class="second-player__image">
+                </figure>
+                <h2 class="player-symbol second-player-symbol">&#9898;</h2>
+            </section>
+        </main>
+    </div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
